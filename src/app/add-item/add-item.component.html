@@ -1,0 +1,6 @@
+<form [formGroup]="form">
+  <mat-form-field class="ml-3">
+    <input matInput formControlName="item" placeholder="wpisz coś" required>
+  </mat-form-field>
+  <button class="ml-2" mat-button color="primary" type="submit" (click)="onSubmit()">Dodaj</button>
+</form>

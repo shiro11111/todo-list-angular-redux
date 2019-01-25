@@ -1,0 +1,13 @@
+<mat-card class="mb-3">
+  <div class="app-list-item">
+    <div>{{item}}</div>
+    <button mat-button (click)="onDelete()">Usuń</button>
+  </div>
+</mat-card>
+
+<ng-template #info>
+  <h3 mat-dialog-title>Potwierdzenie usuwania</h3>
+  Czy na pewno chcesz usunąć {{item}}?
+  <button mat-button (click)="onDeleteApproved(item)">Tak</button>
+  <button mat-button matDialogClose>Nie</button>
+</ng-template>
